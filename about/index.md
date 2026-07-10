@@ -5,4 +5,4 @@ lang: en
 permalink: /about/
 ---
 
-<p class="notice">This page will be completed later.</p>
+<h1>About</h1>

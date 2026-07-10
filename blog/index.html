@@ -1,7 +1,6 @@
 ---
 layout: default
 title: English Blog
-subtitle: Academic notes, reflections, and research-related writings.
 lang: en
 permalink: /blog/
 ---
@@ -10,7 +9,6 @@ permalink: /blog/
 {% for post in en_posts %}
   <div class="card">
     <h3>{{ post.title }}</h3>
-    <p>{{ post.excerpt | strip_html }}</p>
-    <a href="{{ post.url }}">Read more</a>
+    <a href="{{ post.url }}">Read</a>
   </div>
 {% endfor %}

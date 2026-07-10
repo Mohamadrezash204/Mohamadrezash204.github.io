@@ -1,9 +1,7 @@
 ---
 layout: default
-title: یادداشت‌های فارسی
-subtitle: یادداشت‌های علمی، شخصی و پژوهشی.
+title: یادداشت‌ها
 lang: fa
-dir: rtl
 permalink: /fa/blog/
 ---
 
@@ -11,7 +9,6 @@ permalink: /fa/blog/
 {% for post in fa_posts %}
   <div class="card">
     <h3>{{ post.title }}</h3>
-    <p>{{ post.excerpt | strip_html }}</p>
-    <a href="{{ post.url }}">ادامه مطلب</a>
+    <a href="{{ post.url }}">خواندن</a>
   </div>
 {% endfor %}

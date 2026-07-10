@@ -1,39 +1,24 @@
 ---
 layout: default
 title: محمدرضا شفیعی
-subtitle: فیزیک مواد، نانوفناوری و مدل‌سازی محاسباتی.
 lang: fa
-dir: rtl
 permalink: /fa/
 ---
 
 <section class="hero">
   <h1>محمدرضا شفیعی</h1>
-  <p class="subtitle">
-    فیزیک مواد، نانوفناوری و مدل‌سازی محاسباتی.
-  </p>
-  <p>
-    این وب‌سایت برای انتشار یادداشت‌های علمی، مسیر پژوهشی و نوشته‌های منتخب من
-    به زبان فارسی و انگلیسی ساخته شده است.
-  </p>
 </section>
 
+
 <section>
-  <h2>آخرین یادداشت‌های فارسی</h2>
+  <h2>یادداشت‌ها</h2>
 
   {% assign fa_posts = site.posts | where: "lang", "fa" | sort: "date" | reverse %}
 
-  {% if fa_posts.size > 0 %}
-    {% for post in fa_posts limit:3 %}
-      <div class="card">
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
-        <a href="{{ post.url }}">ادامه مطلب</a>
-      </div>
-    {% endfor %}
-  {% else %}
-    <p class="notice">
-      هنوز یادداشتی منتشر نشده است.
-    </p>
-  {% endif %}
+  {% for post in fa_posts limit:3 %}
+    <div class="card">
+      <h3>{{ post.title }}</h3>
+      <a href="{{ post.url }}">خواندن</a>
+    </div>
+  {% endfor %}
 </section>

@@ -1,28 +1,18 @@
 ---
 layout: default
 title: Mohammadreza Shafiei
-subtitle: Materials physics, nanotechnology, and computational modeling.
 lang: en
 ---
 
 <section class="hero">
   <h1>Mohammadreza Shafiei</h1>
-  <p class="subtitle">Materials physics, nanotechnology, and computational modeling.</p>
-  <p>
-    This website is under development. I use it to publish academic notes,
-    research updates, and selected writings in English and Persian.
-  </p>
 </section>
 
-<h2>Latest English Notes</h2>
+<h2>Notes</h2>
 {% assign en_posts = site.posts | where: "lang", "en" %}
 {% for post in en_posts limit:3 %}
   <div class="card">
     <h3>{{ post.title }}</h3>
-    <p>{{ post.excerpt | strip_html }}</p>
-    <a href="{{ post.url }}">Read more</a>
+    <a href="{{ post.url }}">Read</a>
   </div>
 {% endfor %}
-
-<h2>Website Status</h2>
-<p class="notice">The main structure is ready. More pages will be completed gradually.</p>
