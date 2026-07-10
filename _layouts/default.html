@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: 'en' }}" dir="{{ page.dir | default: 'ltr' }}">
+<html lang="{{ page.lang | default: 'en' }}" dir="{% if page.dir %}{{ page.dir }}{% elsif page.lang == 'fa' %}rtl{% else %}ltr{% endif %}">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,7 @@
   <script src="/assets/direction.js" defer></script>
 </head>
 
-<body class="{% if page.dir == 'rtl' %}rtl{% else %}ltr{% endif %}">
+<body class="lang-{{ page.lang | default: 'en' }} {% if page.dir == 'rtl' or page.lang == 'fa' %}rtl{% else %}ltr{% endif %}">
   <header class="site-header">
     <div class="container">
       {% if page.lang == "fa" %}

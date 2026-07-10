@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap");
+
 :root {
   color-scheme: light;
   --bg: #f6f7f9;
@@ -28,7 +30,7 @@ body {
 body.rtl {
   direction: rtl;
   text-align: right;
-  font-family: Tahoma, "Noto Sans Arabic", "Vazirmatn", system-ui, sans-serif;
+  font-family: "Vazirmatn", Tahoma, "Noto Sans Arabic", system-ui, sans-serif;
 }
 
 body.ltr {
@@ -75,6 +77,25 @@ nav a:hover { color: var(--accent); }
 body.rtl nav,
 body.ltr nav {
   justify-content: flex-start;
+}
+
+body.lang-fa,
+body.lang-fa main,
+body.lang-fa .content-flow,
+body.lang-fa .hero,
+body.lang-fa .card,
+body.lang-fa .post,
+body.lang-fa footer,
+:lang(fa) {
+  direction: rtl;
+  text-align: right;
+}
+
+body.lang-fa,
+body.lang-fa .persian,
+body.lang-fa .rtl-block,
+:lang(fa) {
+  font-family: "Vazirmatn", Tahoma, "Noto Sans Arabic", system-ui, sans-serif;
 }
 
 main {
@@ -197,7 +218,7 @@ h3 {
 .persian {
   direction: rtl;
   text-align: right;
-  font-family: Tahoma, "Noto Sans Arabic", "Vazirmatn", system-ui, sans-serif;
+  font-family: "Vazirmatn", Tahoma, "Noto Sans Arabic", system-ui, sans-serif;
 }
 
 .post p { margin: 18px 0; }
