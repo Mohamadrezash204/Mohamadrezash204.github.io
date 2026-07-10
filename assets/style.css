@@ -85,6 +85,12 @@ body.lang-fa .content-flow,
 body.lang-fa .hero,
 body.lang-fa .card,
 body.lang-fa .post,
+body.lang-fa h1,
+body.lang-fa h2,
+body.lang-fa h3,
+body.lang-fa p,
+body.lang-fa li,
+body.lang-fa a,
 body.lang-fa footer,
 :lang(fa) {
   direction: rtl;
