@@ -1,0 +1,14 @@
+# Add saved websites here. They will appear on the home pages automatically.
+#
+# en:
+#   - title: Example resource
+#     url: https://example.com
+#     note: Short note about why this is useful.
+#
+# fa:
+#   - title: عنوان منبع
+#     url: https://example.com
+#     note: یادداشت کوتاه درباره کاربردش.
+
+en: []
+fa: []

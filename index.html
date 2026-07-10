@@ -17,3 +17,16 @@ lang: en
     <a href="{{ post.url }}">Read</a>
   </div>
 {% endfor %}
+
+<section class="link-library">
+  <h2>Selected Resources</h2>
+  {% assign resource_links = site.data.resources.en %}
+  <ul class="resource-list">
+    {% for item in resource_links %}
+      <li>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+        {% if item.note %}<span>{{ item.note }}</span>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
