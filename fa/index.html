@@ -18,6 +18,7 @@ permalink: /fa/
   {% for post in fa_posts limit:3 %}
     <div class="card">
       <h3>{{ post.title }}</h3>
+      <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
       <a href="{{ post.url }}">خواندن</a>
     </div>
   {% endfor %}

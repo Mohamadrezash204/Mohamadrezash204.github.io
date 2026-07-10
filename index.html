@@ -13,6 +13,7 @@ lang: en
 {% for post in en_posts limit:3 %}
   <div class="card">
     <h3>{{ post.title }}</h3>
+    <p>{{ post.excerpt | strip_html }}</p>
     <a href="{{ post.url }}">Read</a>
   </div>
 {% endfor %}
