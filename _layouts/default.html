@@ -8,13 +8,14 @@
   <meta name="description" content="{{ page.description | default: 'Personal academic website of Mohammadreza Shafiei.' }}" />
 
   <link rel="stylesheet" href="/assets/style.css" />
+  <script src="/assets/direction.js" defer></script>
 </head>
 
 <body class="{% if page.dir == 'rtl' %}rtl{% else %}ltr{% endif %}">
   <header class="site-header">
     <div class="container">
       {% if page.lang == "fa" %}
-        <nav>
+        <nav aria-label="Main navigation">
           <a href="/fa/">خانه</a>
           <a href="/fa/blog/">یادداشت‌ها</a>
           <a href="/about/">درباره من</a>
@@ -24,7 +25,7 @@
           <a href="/">English</a>
         </nav>
       {% else %}
-        <nav>
+        <nav aria-label="Main navigation">
           <a href="/">Home</a>
           <a href="/blog/">Blog</a>
           <a href="/about/">About</a>
@@ -37,14 +38,14 @@
     </div>
   </header>
 
-  <main class="container">
+  <main class="container content-flow">
     {{ content }}
   </main>
 
   <footer>
     <div class="container">
       {% if page.lang == "fa" %}
-        © ۲۰۲۶ محمدرضا شفیعی
+        © 2026 محمدرضا شفیعی
       {% else %}
         © 2026 Mohammadreza Shafiei
       {% endif %}
