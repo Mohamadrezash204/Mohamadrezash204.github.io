@@ -54,3 +54,37 @@ footer { border-top: 1px solid #e5e7eb; padding: 24px 20px; color: #6b7280; back
   .subtitle { font-size: 18px; }
   .post { padding: 22px; }
 }
+body.rtl {
+  direction: rtl;
+  text-align: right;
+  font-family: Tahoma, "Noto Sans Arabic", "Vazirmatn", sans-serif;
+}
+
+body.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+body.rtl nav {
+  direction: rtl;
+  justify-content: flex-start;
+}
+
+body.ltr nav {
+  direction: ltr;
+  justify-content: flex-start;
+}
+
+body.rtl .card,
+body.rtl .hero,
+body.rtl main,
+body.rtl footer {
+  text-align: right;
+}
+
+body.ltr .card,
+body.ltr .hero,
+body.ltr main,
+body.ltr footer {
+  text-align: left;
+}
