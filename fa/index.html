@@ -9,30 +9,31 @@ permalink: /fa/
   <h1>محمدرضا شفیعی</h1>
 </section>
 
+<div class="home-grid resources-right">
+  <section class="notes-section">
+    <h2>یادداشت‌ها</h2>
 
-<section>
-  <h2>یادداشت‌ها</h2>
+    {% assign fa_posts = site.posts | where: "lang", "fa" | sort: "date" | reverse %}
 
-  {% assign fa_posts = site.posts | where: "lang", "fa" | sort: "date" | reverse %}
-
-  {% for post in fa_posts limit:3 %}
-    <div class="card">
-      <h3>{{ post.title }}</h3>
-      <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
-      <a href="{{ post.url }}">خواندن</a>
-    </div>
-  {% endfor %}
-</section>
-
-<section class="link-library">
-  <h2>منابع منتخب</h2>
-  {% assign resource_links = site.data.resources.fa %}
-  <ul class="resource-list">
-    {% for item in resource_links %}
-      <li>
-        <a href="{{ item.url }}">{{ item.title }}</a>
-        {% if item.note %}<span>{{ item.note }}</span>{% endif %}
-      </li>
+    {% for post in fa_posts limit:3 %}
+      <div class="card">
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+        <a href="{{ post.url }}">خواندن</a>
+      </div>
     {% endfor %}
-  </ul>
-</section>
+  </section>
+
+  <section class="link-library">
+    <h2>منابع منتخب</h2>
+    {% assign resource_links = site.data.resources.fa %}
+    <ul class="resource-list">
+      {% for item in resource_links %}
+        <li>
+          <a href="{{ item.url }}">{{ item.title }}</a>
+          {% if item.note %}<span>{{ item.note }}</span>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>

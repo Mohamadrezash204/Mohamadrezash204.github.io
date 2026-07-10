@@ -8,25 +8,29 @@ lang: en
   <h1>Mohammadreza Shafiei</h1>
 </section>
 
-<h2>Notes</h2>
-{% assign en_posts = site.posts | where: "lang", "en" %}
-{% for post in en_posts limit:3 %}
-  <div class="card">
-    <h3>{{ post.title }}</h3>
-    <p>{{ post.excerpt | strip_html }}</p>
-    <a href="{{ post.url }}">Read</a>
-  </div>
-{% endfor %}
+<div class="home-grid resources-left">
+  <section class="link-library">
+    <h2>Selected Resources</h2>
+    {% assign resource_links = site.data.resources.en %}
+    <ul class="resource-list">
+      {% for item in resource_links %}
+        <li>
+          <a href="{{ item.url }}">{{ item.title }}</a>
+          {% if item.note %}<span>{{ item.note }}</span>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
 
-<section class="link-library">
-  <h2>Selected Resources</h2>
-  {% assign resource_links = site.data.resources.en %}
-  <ul class="resource-list">
-    {% for item in resource_links %}
-      <li>
-        <a href="{{ item.url }}">{{ item.title }}</a>
-        {% if item.note %}<span>{{ item.note }}</span>{% endif %}
-      </li>
+  <section class="notes-section">
+    <h2>Notes</h2>
+    {% assign en_posts = site.posts | where: "lang", "en" %}
+    {% for post in en_posts limit:3 %}
+      <div class="card">
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html }}</p>
+        <a href="{{ post.url }}">Read</a>
+      </div>
     {% endfor %}
-  </ul>
-</section>
+  </section>
+</div>

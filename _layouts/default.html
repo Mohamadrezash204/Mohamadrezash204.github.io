@@ -19,7 +19,6 @@
           <a href="/fa/">خانه</a>
           <a href="/fa/blog/">یادداشت‌ها</a>
           <a href="/about/">درباره من</a>
-          <a href="/cv/">رزومه</a>
           <a href="/research/">پژوهش</a>
           <a href="/files/">فایل‌ها</a>
           <a href="/">English</a>
@@ -29,7 +28,6 @@
           <a href="/">Home</a>
           <a href="/blog/">Blog</a>
           <a href="/about/">About</a>
-          <a href="/cv/">CV</a>
           <a href="/research/">Research</a>
           <a href="/files/">Files</a>
           <a href="/fa/">فارسی</a>
@@ -43,12 +41,21 @@
   </main>
 
   <footer>
-    <div class="container">
-      {% if page.lang == "fa" %}
-        © 2026 محمدرضا شفیعی
-      {% else %}
-        © 2026 Mohammadreza Shafiei
-      {% endif %}
+    <div class="container footer-inner">
+      <div>
+        {% if page.lang == "fa" %}
+          © 2026 محمدرضا شفیعی
+        {% else %}
+          © 2026 Mohammadreza Shafiei
+        {% endif %}
+      </div>
+      <a class="footer-email" href="mailto:m.r.shafiei24@gmail.com">
+        <svg class="email-icon" aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M4 6h16v12H4z" />
+          <path d="m4 7 8 6 8-6" />
+        </svg>
+        <span>m.r.shafiei24@gmail.com</span>
+      </a>
     </div>
   </footer>
 </body>

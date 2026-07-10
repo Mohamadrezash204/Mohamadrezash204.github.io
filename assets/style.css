@@ -191,6 +191,31 @@ h3 {
   border-bottom: 1px solid var(--border);
 }
 
+.home-grid {
+  display: grid;
+  gap: 32px;
+  align-items: start;
+  margin-top: 8px;
+}
+
+.resources-left {
+  grid-template-columns: minmax(190px, 260px) minmax(0, 1fr);
+}
+
+.resources-right {
+  grid-template-columns: minmax(0, 1fr) minmax(190px, 260px);
+}
+
+.resources-left .link-library,
+.resources-right .notes-section {
+  grid-column: 1;
+}
+
+.resources-left .notes-section,
+.resources-right .link-library {
+  grid-column: 2;
+}
+
 .resource-list {
   list-style: none;
   padding: 0;
@@ -314,6 +339,34 @@ footer {
   background: var(--surface);
 }
 
+.footer-inner {
+  display: grid;
+  gap: 8px;
+}
+
+.footer-email {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  width: fit-content;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-email:hover {
+  color: var(--accent);
+}
+
+.email-icon {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
 @media (max-width: 600px) {
   .container {
     width: min(100% - 28px, 900px);
@@ -332,5 +385,18 @@ footer {
   .post,
   .card {
     padding: 20px;
+  }
+
+  .home-grid,
+  .resources-left,
+  .resources-right {
+    grid-template-columns: 1fr;
+  }
+
+  .resources-left .link-library,
+  .resources-left .notes-section,
+  .resources-right .link-library,
+  .resources-right .notes-section {
+    grid-column: 1;
   }
 }
