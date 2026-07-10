@@ -1,65 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+---
+layout: default
+title: Mohammadreza Shafiei
+subtitle: Materials physics, nanotechnology, and computational modeling.
+lang: en
+---
 
-  <title>Mohammadreza Shafiei</title>
-  <meta name="description" content="Personal academic website of Mohammadreza Shafiei." />
+<p>
+  This website is under development. I use it to publish academic notes,
+  research updates, and selected writings in English and Persian.
+</p>
 
-  <link rel="stylesheet" href="/assets/style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <nav>
-        <a href="/">Home</a>
-        <a href="/blog/">Blog</a>
-        <a href="/about/">About</a>
-        <a href="/cv/">CV</a>
-        <a href="/research/">Research</a>
-        <a href="/contact/">Contact</a>
-        <a href="/fa/">فارسی</a>
-      </nav>
+<h2>Latest English Notes</h2>
+{% assign en_posts = site.posts | where: "lang", "en" %}
+{% for post in en_posts limit:3 %}
+  <div class="card">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.excerpt | strip_html }}</p>
+    <a href="{{ post.url }}">Read more</a>
+  </div>
+{% endfor %}
 
-      <section class="hero">
-        <h1>Mohammadreza Shafiei</h1>
-        <p class="subtitle">
-          Materials physics, nanotechnology, and computational modeling.
-        </p>
-        <p>
-          This website is under development. I use it to publish academic notes,
-          research updates, and selected writings in English and Persian.
-        </p>
-      </section>
-    </div>
-  </header>
-
-  <main class="container">
-    <section>
-      <h2>Latest English Notes</h2>
-
-      <div class="card">
-        <h3>First English Note</h3>
-        <p>
-          A short introductory note for the English section of my website.
-        </p>
-        <a href="/blog/first-post.html">Read more</a>
-      </div>
-    </section>
-
-    <section>
-      <h2>Website Status</h2>
-      <p class="notice">
-        The main structure is ready. More pages will be completed gradually.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      © 2026 Mohammadreza Shafiei
-    </div>
-  </footer>
-</body>
-</html>
+<h2>Website Status</h2>
+<p class="notice">The main structure is ready. More pages will be completed gradually.</p>

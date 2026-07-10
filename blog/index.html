@@ -1,42 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+---
+layout: default
+title: English Blog
+subtitle: Academic notes, reflections, and research-related writings.
+lang: en
+permalink: /blog/
+---
 
-  <title>Blog | Mohammadreza Shafiei</title>
-  <link rel="stylesheet" href="/assets/style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <nav>
-        <a href="/">Home</a>
-        <a href="/blog/">Blog</a>
-        <a href="/about/">About</a>
-        <a href="/cv/">CV</a>
-        <a href="/research/">Research</a>
-        <a href="/contact/">Contact</a>
-        <a href="/fa/">فارسی</a>
-      </nav>
-
-      <h1>English Blog</h1>
-      <p class="subtitle">Academic notes, reflections, and research-related writings.</p>
-    </div>
-  </header>
-
-  <main class="container">
-    <div class="card">
-      <h3>First English Note</h3>
-      <p>My first note on this website.</p>
-      <a href="/blog/first-post.html">Read more</a>
-    </div>
-  </main>
-
-  <footer>
-    <div class="container">
-      © 2026 Mohammadreza Shafiei
-    </div>
-  </footer>
-</body>
-</html>
+{% assign en_posts = site.posts | where: "lang", "en" %}
+{% for post in en_posts %}
+  <div class="card">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.excerpt | strip_html }}</p>
+    <a href="{{ post.url }}">Read more</a>
+  </div>
+{% endfor %}

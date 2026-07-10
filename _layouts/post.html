@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="post">
+  <div class="post-meta">
+    {% if page.date %}
+      {% if page.lang == 'fa' %}تاریخ انتشار: {% else %}Published: {% endif %}{{ page.date | date: "%Y-%m-%d" }}
+    {% endif %}
+  </div>
+
+  {{ content }}
+</article>

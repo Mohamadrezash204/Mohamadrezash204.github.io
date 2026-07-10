@@ -1,0 +1,20 @@
+title: Mohammadreza Shafiei
+description: Personal academic website and bilingual notes of Mohammadreza Shafiei.
+url: "https://mrshafiei.ir"
+baseurl: ""
+lang: en
+timezone: Asia/Tehran
+
+permalink: /blog/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - README.md
+  - .venv
+  - vendor
