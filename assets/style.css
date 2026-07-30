@@ -332,6 +332,18 @@ pre {
   border-radius: var(--radius);
 }
 
+.post mjx-container[display="true"] {
+  direction: ltr;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  padding: 4px 0;
+}
+
+.post mjx-container {
+  direction: ltr;
+}
+
 footer {
   border-top: 1px solid var(--border);
   padding: 24px 0;
