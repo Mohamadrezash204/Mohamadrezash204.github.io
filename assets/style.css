@@ -333,7 +333,9 @@ pre {
 }
 
 .post mjx-container[display="true"] {
-  direction: ltr;
+  direction: ltr !important;
+  text-align: center !important;
+  unicode-bidi: isolate !important;
   overflow-x: auto;
   overflow-y: hidden;
   max-width: 100%;
@@ -341,7 +343,13 @@ pre {
 }
 
 .post mjx-container {
-  direction: ltr;
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+}
+
+.post mjx-container * {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
 }
 
 footer {

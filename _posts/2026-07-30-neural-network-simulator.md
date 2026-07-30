@@ -64,12 +64,12 @@ $$
 
 $$
 \mathcal{G}:
-\left[
-k(\mathbf{x}),
-Q(\mathbf{x},t),
-T_0(\mathbf{x}),
+\begin{bmatrix}
+k(\mathbf{x}) \\
+Q(\mathbf{x},t) \\
+T_0(\mathbf{x}) \\
 BC
-\right]
+\end{bmatrix}
 \longrightarrow
 T(\mathbf{x},t)
 $$
@@ -263,11 +263,11 @@ $$
 برای مثال، در انتقال حرارت می‌توان صدها یا هزاران شبیه‌سازی با منابع حرارتی و خواص مکانی مختلف تولید کرد:
 
 $$
-\left[
-k_i(\mathbf{x}),
-Q_i(\mathbf{x},t),
+\begin{bmatrix}
+k_i(\mathbf{x}) \\
+Q_i(\mathbf{x},t) \\
 BC_i
-\right]
+\end{bmatrix}
 \longrightarrow
 T_i(\mathbf{x},t)
 $$
@@ -493,13 +493,13 @@ $$
 
 $$
 \mathcal{G}_{\theta}:
-\left[
-Q_{\mathrm{laser}}(\mathbf{x},t),
-k(\mathbf{x},T),
-C_p(\mathbf{x},T),
-BC,
+\begin{bmatrix}
+Q_{\mathrm{laser}}(\mathbf{x},t) \\
+k(\mathbf{x},T) \\
+C_p(\mathbf{x},T) \\
+BC \\
 T_0
-\right]
+\end{bmatrix}
 \longrightarrow
 T(\mathbf{x},t)
 $$
@@ -582,12 +582,12 @@ $$
 یا در حالت کلی‌تر:
 
 $$
-\left[
-\phi_0(\mathbf{x}),
-M(\mathbf{x}),
-\gamma(\mathbf{x}),
+\begin{bmatrix}
+\phi_0(\mathbf{x}) \\
+M(\mathbf{x}) \\
+\gamma(\mathbf{x}) \\
 T(\mathbf{x},t)
-\right]
+\end{bmatrix}
 \longrightarrow
 \phi(\mathbf{x},t)
 $$
