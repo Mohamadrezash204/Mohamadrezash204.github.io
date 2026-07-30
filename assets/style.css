@@ -332,6 +332,22 @@ pre {
   border-radius: var(--radius);
 }
 
+.post pre {
+  direction: ltr;
+  text-align: left;
+  unicode-bidi: isolate;
+  white-space: pre;
+  background: #f8fafc;
+  color: #0f172a;
+  border: 1px solid var(--border);
+}
+
+.post pre code {
+  direction: ltr;
+  unicode-bidi: isolate;
+  line-height: 1.75;
+}
+
 .post mjx-container[display="true"] {
   direction: ltr !important;
   text-align: center !important;
