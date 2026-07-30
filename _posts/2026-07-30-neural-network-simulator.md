@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "همگامی با شبکه‌عصبی در فیزیک"
+title: "همگامی شبکه‌عصبی با فیزیک"
 date: 2026-07-30
 lang: fa
 permalink: /fa/blog/neural-network-simulator/
