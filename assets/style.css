@@ -281,6 +281,49 @@ h3 {
   font-family: "Vazirmatn", Tahoma, "Noto Sans Arabic", system-ui, sans-serif;
 }
 
+.about-page {
+  max-width: 860px;
+  margin-inline: auto;
+  padding: 18px 0 28px;
+}
+
+.about-section {
+  padding: 28px 0;
+}
+
+.about-section + .about-section {
+  border-top: 1px solid var(--border);
+  margin-top: 10px;
+}
+
+.about-section h1,
+.about-section h2 {
+  margin: 0 0 18px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: 0;
+}
+
+.about-section p {
+  margin: 0 0 18px;
+  color: var(--text);
+  font-size: 1.05rem;
+  line-height: 2;
+  unicode-bidi: plaintext;
+}
+
+.about-section.english p {
+  line-height: 1.8;
+}
+
+.about-section .section-kicker {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .post p { margin: 18px 0; }
 
 .post ul,
