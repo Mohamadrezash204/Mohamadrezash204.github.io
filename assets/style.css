@@ -245,12 +245,34 @@ h3 {
   display: grid;
   gap: 4px;
   padding: 12px 0;
+  background: var(--surface);
   border-bottom: 1px solid var(--border);
 }
 
 .resource-row {
   display: grid;
   gap: 8px;
+}
+
+.link-library h2 a,
+.resource-row > a:first-child,
+.resource-card h2,
+.resource-card h2 a {
+  color: #0f172a;
+}
+
+.link-library h2 a,
+.resource-row > a:first-child {
+  text-decoration-line: underline;
+  text-decoration-color: #94a3b8;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
+
+.link-library h2 a:hover,
+.resource-row > a:first-child:hover {
+  color: #334155;
+  text-decoration-color: #334155;
 }
 
 .review-link {
