@@ -15,4 +15,8 @@ en:
     url: "https://books.google.fr/books/about/Molecular_Dynamics.html?id=AGF1CQAAQBAJ&redir_esc=y"
     review_url: "/resources/molecular-dynamics/"
     note: "A reference on deterministic and stochastic numerical methods for molecular dynamics."
+  - title: "More Is Different"
+    url: "https://doi.org/10.1126/science.177.4047.393"
+    review_url: "/resources/more-is-different/"
+    note: "P. W. Anderson's classic article on emergence and the limits of reductionism."
 fa: []
