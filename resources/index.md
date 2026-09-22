@@ -14,7 +14,7 @@ permalink: /resources/
   <div class="resource-catalog">
     {% for item in resource_links %}
       <article class="resource-card">
-        <h2>{{ item.title }}</h2>
+        <h2><a href="{{ item.review_url | default: item.url }}">{{ item.title }}</a></h2>
         {% if item.note %}<p>{{ item.note }}</p>{% endif %}
         <div class="resource-actions">
           <a href="{{ item.url }}">Open resource</a>

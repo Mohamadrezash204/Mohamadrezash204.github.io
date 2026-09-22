@@ -26,10 +26,7 @@ lang: en
         {% for item in resource_links limit:5 %}
           <li>
             <div class="resource-row">
-              <a href="{{ item.url }}">{{ item.title }}</a>
-              {% if item.review_url %}
-                <a class="review-link" href="{{ item.review_url }}">My review</a>
-              {% endif %}
+              <a href="{{ item.review_url | default: item.url }}">{{ item.title }}</a>
             </div>
           </li>
         {% endfor %}
