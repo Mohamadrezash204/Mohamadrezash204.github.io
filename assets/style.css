@@ -206,6 +206,10 @@ h3 {
   grid-template-columns: minmax(0, 1fr) minmax(190px, 260px);
 }
 
+.home-with-quote {
+  grid-template-columns: minmax(170px, 230px) minmax(210px, 260px) minmax(0, 1fr);
+}
+
 .resources-left .link-library,
 .resources-right .notes-section {
   grid-column: 1;
@@ -214,6 +218,18 @@ h3 {
 .resources-left .notes-section,
 .resources-right .link-library {
   grid-column: 2;
+}
+
+.home-with-quote .link-library {
+  grid-column: 1;
+}
+
+.home-with-quote .quote-column {
+  grid-column: 2;
+}
+
+.home-with-quote .notes-section {
+  grid-column: 3;
 }
 
 .resource-list {
@@ -232,6 +248,35 @@ h3 {
 .resource-list span {
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.quote-column blockquote {
+  margin: 12px 0 0;
+  padding: 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.04);
+}
+
+.quote-column p {
+  margin: 0;
+  color: #334155;
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.quote-column cite {
+  display: block;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.quote-column cite::before {
+  content: "- ";
 }
 
 .post {
@@ -451,6 +496,7 @@ footer {
 
   .resources-left .link-library,
   .resources-left .notes-section,
+  .home-with-quote .quote-column,
   .resources-right .link-library,
   .resources-right .notes-section {
     grid-column: 1;

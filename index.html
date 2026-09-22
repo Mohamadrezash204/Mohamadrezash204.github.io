@@ -9,7 +9,7 @@ lang: en
   <p class="subtitle">A tribute to the curiosity that drives discovery across science, technology, psychology, and society.</p>
 </section>
 
-<div class="home-grid resources-left">
+<div class="home-grid resources-left home-with-quote">
   <section class="link-library">
     <h2>Selected Resources</h2>
     {% assign resource_links = site.data.resources.en %}
@@ -21,6 +21,14 @@ lang: en
         </li>
       {% endfor %}
     </ul>
+  </section>
+
+  <section class="quote-column" aria-label="Quote">
+    <h2>Quote</h2>
+    <blockquote>
+      <p>“The underlying physical laws necessary for the mathematical theory of a large part of physics and the whole of chemistry are thus completely known, and the difficulty is only that the exact application of these laws leads to equations much too complicated to be soluble.”</p>
+      <cite>Paul Dirac</cite>
+    </blockquote>
   </section>
 
   <section class="notes-section">
