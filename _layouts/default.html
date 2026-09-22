@@ -50,7 +50,7 @@
     </div>
   </header>
 
-  <main class="container content-flow">
+  <main class="container content-flow {% if page.url == '/' %}home-container{% endif %}">
     {{ content }}
   </main>
 

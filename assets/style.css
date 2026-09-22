@@ -58,6 +58,10 @@ a {
   margin: 0 auto;
 }
 
+.home-container {
+  width: min(100% - 40px, 1180px);
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -207,7 +211,7 @@ h3 {
 }
 
 .home-with-quote {
-  grid-template-columns: minmax(230px, 285px) minmax(0, 1fr);
+  grid-template-columns: minmax(230px, 280px) minmax(0, 1fr);
 }
 
 .resources-left .link-library,
@@ -469,6 +473,10 @@ footer {
 
 @media (max-width: 600px) {
   .container {
+    width: min(100% - 28px, 900px);
+  }
+
+  .home-container {
     width: min(100% - 28px, 900px);
   }
 
