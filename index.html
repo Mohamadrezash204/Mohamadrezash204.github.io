@@ -20,13 +20,17 @@ lang: en
     </section>
 
     <section class="link-library">
-      <h2>Selected Resources</h2>
-      {% assign resource_links = site.data.resources.en %}
+      <h2><a href="/resources/">Selected Resources</a></h2>
+      {% assign resource_links = site.data.resources.en | reverse %}
       <ul class="resource-list">
-        {% for item in resource_links %}
+        {% for item in resource_links limit:5 %}
           <li>
-            <a href="{{ item.url }}">{{ item.title }}</a>
-            {% if item.note %}<span>{{ item.note }}</span>{% endif %}
+            <div class="resource-row">
+              <a href="{{ item.url }}">{{ item.title }}</a>
+              {% if item.review_url %}
+                <a class="review-link" href="{{ item.review_url }}">My review</a>
+              {% endif %}
+            </div>
           </li>
         {% endfor %}
       </ul>

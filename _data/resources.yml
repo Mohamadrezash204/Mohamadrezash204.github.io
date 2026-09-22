@@ -13,5 +13,6 @@
 en:
   - title: "Molecular Dynamics: With Deterministic and Stochastic Numerical Methods"
     url: "https://books.google.fr/books/about/Molecular_Dynamics.html?id=AGF1CQAAQBAJ&redir_esc=y"
+    review_url: "/resources/molecular-dynamics/"
     note: "A reference on deterministic and stochastic numerical methods for molecular dynamics."
 fa: []
