@@ -8,13 +8,24 @@
         Comments are powered by GitHub. Signing in with GitHub is required to comment.
       {% endif %}
     </p>
-    <script src="https://utteranc.es/client.js"
-      repo="{{ site.comments.repo }}"
-      issue-term="{{ site.comments.issue_term }}"
-      label="{{ site.comments.label }}"
-      theme="{{ site.comments.theme }}"
-      crossorigin="anonymous"
-      async>
-    </script>
+    <div class="utterances-root">
+      <script src="https://utteranc.es/client.js"
+        repo="{{ site.comments.repo }}"
+        issue-term="{{ site.comments.issue_term }}"
+        label="{{ site.comments.label }}"
+        theme="{{ site.comments.theme }}"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>
+    <p class="comments-fallback">
+      {% if page.lang == 'fa' %}
+        اگر فرم دیدگاه نمایش داده نشد، می‌توانید
+        <a href="https://github.com/{{ site.comments.repo }}/issues/new?title=Comment%20on%20{{ page.url | uri_escape }}">دیدگاه را در GitHub ثبت کنید</a>.
+      {% else %}
+        If the comment form does not appear, you can
+        <a href="https://github.com/{{ site.comments.repo }}/issues/new?title=Comment%20on%20{{ page.url | uri_escape }}">leave a comment on GitHub</a>.
+      {% endif %}
+    </p>
   </section>
 {% endif %}
