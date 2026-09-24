@@ -1,0 +1,20 @@
+{% if site.comments.enabled and site.comments.provider == "utterances" %}
+  <section class="comments-section" aria-label="{% if page.lang == 'fa' %}دیدگاه‌ها{% else %}Comments{% endif %}">
+    <h2>{% if page.lang == 'fa' %}دیدگاه‌ها{% else %}Comments{% endif %}</h2>
+    <p class="comments-note">
+      {% if page.lang == 'fa' %}
+        برای ثبت دیدگاه، ورود با حساب GitHub لازم است.
+      {% else %}
+        Comments are powered by GitHub. Signing in with GitHub is required to comment.
+      {% endif %}
+    </p>
+    <script src="https://utteranc.es/client.js"
+      repo="{{ site.comments.repo }}"
+      issue-term="{{ site.comments.issue_term }}"
+      label="{{ site.comments.label }}"
+      theme="{{ site.comments.theme }}"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </section>
+{% endif %}

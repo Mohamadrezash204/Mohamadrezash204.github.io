@@ -500,6 +500,22 @@ h3 {
   line-height: 1.7;
 }
 
+.comments-section {
+  margin-top: 42px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+.comments-section h2 {
+  margin-top: 0;
+}
+
+.comments-note {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 code,
 pre {
   direction: ltr;

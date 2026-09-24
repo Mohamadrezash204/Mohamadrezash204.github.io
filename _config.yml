@@ -14,6 +14,14 @@ kramdown:
 plugins:
   - jekyll-feed
 
+comments:
+  enabled: true
+  provider: utterances
+  repo: "Mohamadrezash204/Mohamadrezash204.github.io"
+  issue_term: "pathname"
+  label: "comment"
+  theme: "github-light"
+
 exclude:
   - README.md
   - .venv
