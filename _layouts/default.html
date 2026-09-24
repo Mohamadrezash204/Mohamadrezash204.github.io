@@ -27,7 +27,7 @@
 
 <body class="lang-{{ page.lang | default: 'en' }} {% if page.lang == 'fa' %}rtl{% else %}ltr{% endif %}">
   <header class="site-header">
-    <div class="container {% if page.url == '/' %}home-container{% endif %}">
+    <div class="container">
       {% if page.lang == "fa" %}
         <nav aria-label="Main navigation">
           <a href="/fa/">خانه</a>
@@ -51,12 +51,12 @@
     </div>
   </header>
 
-  <main class="container content-flow {% if page.url == '/' %}home-container{% endif %}">
+  <main class="container content-flow">
     {{ content }}
   </main>
 
   <footer>
-    <div class="container footer-inner {% if page.url == '/' %}home-container{% endif %}">
+    <div class="container footer-inner">
       <div>
         {% if page.lang == "fa" %}
           © 2026 محمدرضا شفیعی
