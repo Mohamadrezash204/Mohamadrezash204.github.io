@@ -258,6 +258,7 @@ h3 {
 }
 
 .link-library h2 a,
+.quote-column h2 a,
 .resource-row > a:first-child,
 .resource-card h2,
 .resource-card h2 a {
@@ -265,6 +266,7 @@ h3 {
 }
 
 .link-library h2 a,
+.quote-column h2 a,
 .resource-row > a:first-child {
   text-decoration-line: underline;
   text-decoration-color: #94a3b8;
@@ -273,6 +275,7 @@ h3 {
 }
 
 .link-library h2 a:hover,
+.quote-column h2 a:hover,
 .resource-row > a:first-child:hover {
   color: #334155;
   text-decoration-color: #334155;
@@ -347,7 +350,8 @@ h3 {
   border-top: 1px solid var(--border);
 }
 
-.quote-column blockquote {
+.quote-column blockquote,
+.quote-catalog blockquote {
   margin: 12px 0 0;
   padding: 18px;
   background: var(--surface);
@@ -356,14 +360,16 @@ h3 {
   box-shadow: 0 14px 34px rgba(15, 23, 42, 0.04);
 }
 
-.quote-column p {
+.quote-column p,
+.quote-catalog p {
   margin: 0;
   color: #334155;
   font-size: 0.98rem;
   line-height: 1.75;
 }
 
-.quote-column cite {
+.quote-column cite,
+.quote-catalog cite {
   display: block;
   margin-top: 14px;
   color: var(--muted);
@@ -372,8 +378,32 @@ h3 {
   font-weight: 700;
 }
 
-.quote-column cite::before {
+.quote-column cite::before,
+.quote-catalog cite::before {
   content: "- ";
+}
+
+.quote-column blockquote + blockquote {
+  margin-top: 16px;
+}
+
+.quote-column blockquote p + p,
+.quote-catalog blockquote p + p {
+  margin-top: 12px;
+}
+
+.quote-page {
+  width: 100%;
+}
+
+.quote-catalog {
+  display: grid;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.quote-catalog blockquote {
+  margin: 0;
 }
 
 .post {

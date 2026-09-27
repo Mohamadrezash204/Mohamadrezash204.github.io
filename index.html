@@ -12,11 +12,18 @@ lang: en
 <div class="home-grid resources-left home-with-quote">
   <aside class="home-sidebar">
     <section class="quote-column" aria-label="Quote">
-      <h2>Quote</h2>
-      <blockquote>
-        <p>“The underlying physical laws necessary for the mathematical theory of a large part of physics and the whole of chemistry are thus completely known, and the difficulty is only that the exact application of these laws leads to equations much too complicated to be soluble.”</p>
-        <cite>Paul Dirac</cite>
-      </blockquote>
+      <h2><a href="/quotes/">Quotes</a></h2>
+      {% assign recent_quotes = site.data.quotes.en | reverse %}
+      {% for quote in recent_quotes limit:2 %}
+        <blockquote>
+          {% for paragraph in quote.paragraphs %}
+            <p>{{ paragraph }}</p>
+          {% endfor %}
+          <cite>
+            {{ quote.author }}{% if quote.work %}, <em>{{ quote.work }}</em>{% endif %}{% if quote.year %} ({{ quote.year }}){% endif %}{% if quote.section %}, “{{ quote.section }}”{% endif %}
+          </cite>
+        </blockquote>
+      {% endfor %}
     </section>
 
     <section class="link-library">

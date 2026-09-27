@@ -1,0 +1,24 @@
+---
+layout: default
+title: Quotes
+lang: en
+permalink: /quotes/
+---
+
+<section class="quote-page">
+  <h1>Quotes</h1>
+
+  {% assign quotes = site.data.quotes.en | reverse %}
+  <div class="quote-catalog">
+    {% for quote in quotes %}
+      <blockquote>
+        {% for paragraph in quote.paragraphs %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
+        <cite>
+          {{ quote.author }}{% if quote.work %}, <em>{{ quote.work }}</em>{% endif %}{% if quote.year %} ({{ quote.year }}){% endif %}{% if quote.section %}, “{{ quote.section }}”{% endif %}
+        </cite>
+      </blockquote>
+    {% endfor %}
+  </div>
+</section>
