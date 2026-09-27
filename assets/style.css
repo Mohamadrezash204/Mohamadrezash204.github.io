@@ -264,6 +264,11 @@ h3 {
   color: #0f172a;
 }
 
+.home-section-link,
+.home-section-link:visited {
+  color: #0f172a !important;
+}
+
 .home-sidebar > section > h2 a,
 .resource-row > a:first-child {
   text-decoration-line: underline;
@@ -276,6 +281,10 @@ h3 {
 .resource-row > a:first-child:hover {
   color: #334155;
   text-decoration-color: #334155;
+}
+
+.home-section-link:hover {
+  color: #334155 !important;
 }
 
 .review-link {

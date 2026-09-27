@@ -12,7 +12,7 @@ lang: en
 <div class="home-grid resources-left home-with-quote">
   <aside class="home-sidebar">
     <section class="quote-column" aria-label="Quote">
-      <h2><a href="/quotes/">Quotes</a></h2>
+      <h2><a class="home-section-link" href="/quotes/">Quotes</a></h2>
       {% assign featured_quote = site.data.quotes.en | where: "featured", true | first %}
       {% unless featured_quote %}
         {% assign featured_quote = site.data.quotes.en | last %}
@@ -30,7 +30,7 @@ lang: en
     </section>
 
     <section class="link-library">
-      <h2><a href="/resources/">Selected Resources</a></h2>
+      <h2><a class="home-section-link" href="/resources/">Selected Resources</a></h2>
       {% assign resource_links = site.data.resources.en | reverse %}
       <ul class="resource-list">
         {% for item in resource_links limit:5 %}
