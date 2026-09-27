@@ -19,4 +19,8 @@ en:
     url: "https://doi.org/10.1126/science.177.4047.393"
     review_url: "/resources/more-is-different/"
     note: "P. W. Anderson's classic article on emergence and the limits of reductionism."
+  - title: "Statistical Mechanics: Entropy, Order Parameters, and Complexity"
+    url: "https://academic.oup.com/book/44296"
+    review_url: "/resources/entropy-order-parameters-complexity/"
+    note: "James P. Sethna's introduction to statistical mechanics, emergence, phase transitions, and complexity."
 fa: []
