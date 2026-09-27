@@ -13,17 +13,20 @@ lang: en
   <aside class="home-sidebar">
     <section class="quote-column" aria-label="Quote">
       <h2><a href="/quotes/">Quotes</a></h2>
-      {% assign recent_quotes = site.data.quotes.en | reverse %}
-      {% for quote in recent_quotes limit:2 %}
+      {% assign featured_quote = site.data.quotes.en | where: "featured", true | first %}
+      {% unless featured_quote %}
+        {% assign featured_quote = site.data.quotes.en | last %}
+      {% endunless %}
+      {% if featured_quote %}
         <blockquote>
-          {% for paragraph in quote.paragraphs %}
+          {% for paragraph in featured_quote.paragraphs %}
             <p>{{ paragraph }}</p>
           {% endfor %}
           <cite>
-            {{ quote.author }}{% if quote.work %}, <em>{{ quote.work }}</em>{% endif %}{% if quote.year %} ({{ quote.year }}){% endif %}{% if quote.section %}, “{{ quote.section }}”{% endif %}
+            {{ featured_quote.author }}{% if featured_quote.work %}, <em>{{ featured_quote.work }}</em>{% endif %}{% if featured_quote.year %} ({{ featured_quote.year }}){% endif %}{% if featured_quote.section %}, “{{ featured_quote.section }}”{% endif %}
           </cite>
         </blockquote>
-      {% endfor %}
+      {% endif %}
     </section>
 
     <section class="link-library">

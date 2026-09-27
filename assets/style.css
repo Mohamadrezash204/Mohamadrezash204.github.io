@@ -257,16 +257,14 @@ h3 {
   gap: 8px;
 }
 
-.link-library h2 a,
-.quote-column h2 a,
+.home-sidebar > section > h2 a,
 .resource-row > a:first-child,
 .resource-card h2,
 .resource-card h2 a {
   color: #0f172a;
 }
 
-.link-library h2 a,
-.quote-column h2 a,
+.home-sidebar > section > h2 a,
 .resource-row > a:first-child {
   text-decoration-line: underline;
   text-decoration-color: #94a3b8;
@@ -274,8 +272,7 @@ h3 {
   text-underline-offset: 5px;
 }
 
-.link-library h2 a:hover,
-.quote-column h2 a:hover,
+.home-sidebar > section > h2 a:hover,
 .resource-row > a:first-child:hover {
   color: #334155;
   text-decoration-color: #334155;
@@ -398,12 +395,16 @@ h3 {
 
 .quote-catalog {
   display: grid;
-  gap: 18px;
+  gap: 0;
   margin-top: 24px;
 }
 
 .quote-catalog blockquote {
-  margin: 0;
+  margin: 0 0 24px;
+}
+
+.quote-catalog blockquote:last-child {
+  margin-bottom: 0;
 }
 
 .post {
