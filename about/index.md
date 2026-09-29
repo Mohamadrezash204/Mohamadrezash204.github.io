@@ -9,7 +9,7 @@ permalink: /about/
   <div class="about-section english" lang="en" dir="ltr">
     <h1>About This Blog</h1>
 
-    <p>My name is Mohamadreza Shafiei. I am a master’s student in physics and nanomaterials, originally from Isfahan, Iran, and currently living in Paris.</p>
+    <p>My name is Mohamadreza Shafiei. I am a master’s student in physics and nanomaterials at Sorbonne Université, originally from Isfahan, Iran, and currently living in Paris.</p>
 
     <p>I created this blog as a place to think in writing. Most posts grow out of questions I encounter while studying, doing research, or simply trying to understand something that catches my attention. My main interests are physics, complexity, computational methods, machine learning, and materials science, among lots of other things.</p>
 
