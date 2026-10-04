@@ -1,10 +1,5 @@
 en:
   - paragraphs:
-      - "“The underlying physical laws necessary for the mathematical theory of a large part of physics and the whole of chemistry are thus completely known, and the difficulty is only that the exact application of these laws leads to equations much too complicated to be soluble.”"
-    author: "Paul Dirac"
-    featured: true
-
-  - paragraphs:
       - "“At last, some time before I stopped, the sun, red and very large, halted motionless upon the horizon, a vast dome glowing with a dull heat…”"
       - "“There were no breakers and no waves, for not a breath of wind was stirring. Only a slight oily swell rose and fell like a gentle breathing, and showed that the eternal sea was still moving and living.”"
       - "“…watching with a strange fascination the sun grow larger and duller in the westward sky, and the life of the old earth ebb away.”"
@@ -12,3 +7,11 @@ en:
     work: "The Time Machine"
     year: "1895"
     section: "The Further Vision"
+
+  - paragraphs:
+      - "“In closing, I offer two examples from economics of what I hope to have said. Marx said that quantitative differences become qualitative ones, but a dialogue in Paris in the 1920s sums it up even more clearly:"
+      - "<strong>Fitzgerald:</strong> ‘The rich are different from us.’"
+      - "<strong>Hemingway:</strong> ‘Yes, they have more money.’”"
+    author: "P. W. Anderson"
+    work: "More Is Different"
+    featured: true
