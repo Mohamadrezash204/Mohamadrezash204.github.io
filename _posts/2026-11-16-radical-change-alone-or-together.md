@@ -5,7 +5,7 @@ date: 2026-11-16
 lang: fa
 dir: rtl
 math: true
-permalink: /fa/blog/radical-change-alone-or-together/
+permalink: /fa/blog/radical-change-individual-or-collective/
 excerpt: "از مگنون و برهم‌کنش اسپین‌ها تا پرسشی درباره‌ی هزینه‌ی تغییر فردی و جمعی؛ چه زمانی هماهنگی، هزینه‌ی تغییر را کاهش می‌دهد؟"
 ---
 
